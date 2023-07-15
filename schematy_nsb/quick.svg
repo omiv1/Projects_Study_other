@@ -1,0 +1,110 @@
+<!DOCTYPE svg>
+<svg width="2560" version="1.2" xmlns="http://www.w3.org/2000/svg" height="1285" viewBox="0 0 2560 1299" font-size="11">
+  <g>
+    <g>
+      <text x="10" y="16" text-anchor="start">void quick_sort(int* &amp;tab, int lewy, int prawy)</text>
+      <rect width="2552" x="0" y="0" fill="none" height="22" stroke="black" stroke-width="1"/>
+    </g>
+    <g>
+      <text x="10" y="38" text-anchor="start">i = lewy</text>
+      <rect width="2552" x="0" y="22" fill="none" height="22" stroke="black" stroke-width="1"/>
+    </g>
+    <g>
+      <text x="10" y="60" text-anchor="start">j = prawy</text>
+      <rect width="2552" x="0" y="44" fill="none" height="22" stroke="black" stroke-width="1"/>
+    </g>
+    <g>
+      <text x="10" y="82" text-anchor="start">srodek = int((lewy+prawy)/2)</text>
+      <rect width="2552" x="0" y="66" fill="none" height="22" stroke="black" stroke-width="1"/>
+    </g>
+    <g>
+      <text x="10" y="104" text-anchor="start">pivot = tab[srodek]</text>
+      <rect width="2552" x="0" y="88" fill="none" height="22" stroke="black" stroke-width="1"/>
+    </g>
+    <g>
+      <text x="20" y="122" text-anchor="start">i &lt;= j</text>
+      <rect width="2552" x="0" y="110" fill="none" height="384" stroke="black" stroke-width="1"/>
+      <g>
+        <g>
+          <text x="60" y="136" text-anchor="start">tab[i] &lt; pivot</text>
+          <rect width="2512" x="40" y="124" fill="none" height="123" stroke="black" stroke-width="1"/>
+          <g>
+            <g>
+              <text x="90" y="197" text-anchor="start">i++</text>
+              <rect width="2472" x="80" y="138" fill="none" height="109" stroke="black" stroke-width="1"/>
+            </g>
+          </g>
+        </g>
+        <g>
+          <text x="60" y="259" text-anchor="start">tab[j] > pivot</text>
+          <rect width="2512" x="40" y="247" fill="none" height="124" stroke="black" stroke-width="1"/>
+          <g>
+            <g>
+              <text x="90" y="321" text-anchor="start">j--</text>
+              <rect width="2472" x="80" y="261" fill="none" height="110" stroke="black" stroke-width="1"/>
+            </g>
+          </g>
+        </g>
+        <g>
+          <text x="1296" y="394" text-anchor="middle">i &lt;= j</text>
+          <text x="50" y="421" text-anchor="start">TAK</text>
+          <text x="2542" y="421" text-anchor="end">NIE</text>
+          <line stroke="black" y1="371" x1="40" y2="426" stroke-width="1" x2="1296"/>
+          <line stroke="black" y1="426" x1="1296" y2="371" stroke-width="1" x2="2552"/>
+          <line stroke="black" y1="426" x1="40" y2="426" stroke-width="1" x2="2552"/>
+          <line stroke="black" y1="426" x1="1296" y2="494" stroke-width="1" x2="1296"/>
+          <rect width="2512" x="40" y="371" fill="none" height="123" stroke="black" stroke-width="1"/>
+          <g>
+            <g>
+              <text x="50" y="442" text-anchor="start">swap(tab[i], tab[j])</text>
+              <rect width="1256" x="40" y="426" fill="none" height="23" stroke="black" stroke-width="1"/>
+            </g>
+            <g>
+              <text x="50" y="465" text-anchor="start">i++</text>
+              <rect width="1256" x="40" y="449" fill="none" height="22" stroke="black" stroke-width="1"/>
+            </g>
+            <g>
+              <text x="50" y="487" text-anchor="start">j--</text>
+              <rect width="1256" x="40" y="471" fill="none" height="23" stroke="black" stroke-width="1"/>
+            </g>
+          </g>
+          <g/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <text x="1276" y="529" text-anchor="middle">lewy &lt; j</text>
+      <text x="10" y="581" text-anchor="start">TAK</text>
+      <text x="2542" y="581" text-anchor="end">NIE</text>
+      <line stroke="black" y1="494" x1="0" y2="586" stroke-width="1" x2="1276"/>
+      <line stroke="black" y1="586" x1="1276" y2="494" stroke-width="1" x2="2552"/>
+      <line stroke="black" y1="586" x1="0" y2="586" stroke-width="1" x2="2552"/>
+      <line stroke="black" y1="586" x1="1276" y2="879" stroke-width="1" x2="1276"/>
+      <rect width="2552" x="0" y="494" fill="none" height="385" stroke="black" stroke-width="1"/>
+      <g>
+        <g>
+          <text x="10" y="737" text-anchor="start">quick_sort(tab, lewy, j)</text>
+          <rect width="1276" x="0" y="586" fill="none" height="293" stroke="black" stroke-width="1"/>
+        </g>
+      </g>
+      <g/>
+    </g>
+    <g>
+      <text x="1276" y="916" text-anchor="middle">prawy > i</text>
+      <text x="10" y="971" text-anchor="start">TAK</text>
+      <text x="2542" y="971" text-anchor="end">NIE</text>
+      <line stroke="black" y1="879" x1="0" y2="976" stroke-width="1" x2="1276"/>
+      <line stroke="black" y1="976" x1="1276" y2="879" stroke-width="1" x2="2552"/>
+      <line stroke="black" y1="976" x1="0" y2="976" stroke-width="1" x2="2552"/>
+      <line stroke="black" y1="976" x1="1276" y2="1263" stroke-width="1" x2="1276"/>
+      <rect width="2552" x="0" y="879" fill="none" height="384" stroke="black" stroke-width="1"/>
+      <g>
+        <g>
+          <text x="10" y="1124" text-anchor="start">quick_sort(tab, i, prawy)</text>
+          <rect width="1276" x="0" y="976" fill="none" height="287" stroke="black" stroke-width="1"/>
+        </g>
+      </g>
+      <g/>
+    </g>
+  </g>
+</svg>
