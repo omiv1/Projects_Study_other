@@ -1,0 +1,25 @@
+raczej dobrze:
+
+1 - linie raczej git
+2 - nie linie raczej git
+3 - arhitektura git
+4 - jeden odczyt raczeej git
+5 - ram - raczej git
+6 - user nie moze raczej git (jesli dobze zaznaczyelm)
+7 - arm i th..  git
+8 - ortogalnosc - raczej git
+9 - prawo - raczej git
+10 - abort - raczej git 
+11 - wektor przerwań - raczej git
+12 - 
+
+
+
+raczej zle:
+20 - csrp - raczej zle
+19 - arx - zle
+18 - wykers raczej zle
+
+chuj wie:
+17 - swi i inne
+16 - f00000000000

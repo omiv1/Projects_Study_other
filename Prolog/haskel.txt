@@ -1,0 +1,20 @@
+
+kwadrat_i :: Int -> Int
+kwadrat_i a = a * a
+kwadrat_f :: Float -> Float
+kwadrat_f a = a * a
+kwadrat_n :: Num aaaaa => aaaaa-> aaaaa
+kwadrat_n a = a * a
+kwadrat_w a = a * a
+
+dzielenie a b = a/b;
+main = do
+    print (kwadrat_i 9)
+    print (kwadrat_f 9)
+    print (kwadrat_n 9)
+    print (kwadrat_n 9.5)
+    print (kwadrat_w 9.5)
+    print (kwadrat_w 9)
+    print (' ')
+    print (dzielenie 5 2)
+    print (dzielenie 6 2)

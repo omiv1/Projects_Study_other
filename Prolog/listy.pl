@@ -1,0 +1,21 @@
+isMember(X,[X|Y]) :- Y=[],!.
+isMember(X,[Y|_]) :- X=Y.
+isMember(X,[_|Y]) :- isMember(X,Y).
+
+czyLista([]).
+czyLista([_|T]) :- write(T),czyLista(T).
+
+ile([],0).
+ile([_|T],X) :- ile(T,X1),X is X1+1.
+
+suma([],0).
+suma([H|T],X) :- suma(T,X1),X is X1+H.
+
+suma2([],A,A).
+suma2([H|T],A,X) :- A1 is H+A, suma2(T,A1,X).
+
+
+
+
+
+

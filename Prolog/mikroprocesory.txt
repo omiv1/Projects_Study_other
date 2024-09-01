@@ -1,0 +1,91 @@
+/*
+ * LO_Lab2.c
+ *
+ * Created: 2023-04-19 16:19:51
+ * Author : Student*/
+ 
+#define F_CPU 1000000UL
+#include <avr/io.h>
+#include <util/delay.h>
+
+void zadanie1()
+{
+	DDRA = 255;
+	PORTA = 0b10101010;
+}
+void zadanie2()
+{
+	int i=0;
+	DDRA = 255;
+	PORTA = 0;
+	while (1)
+	{
+		for(int i=0;i<8;i++)
+		{
+			PORTA^=(1<<i);
+			_delay_ms(200);
+		}
+		PORTA = 0;
+	}
+}
+void zadanie3()
+{
+	int i=0;
+	DDRA = 255;
+	PORTA = 255;
+	while (1)
+	{
+		for(int i=0;i<8;i++)
+		{
+			PORTA^=(1<<i);
+			_delay_ms(200);
+			PORTA^=(1<<i);
+		}
+		PORTA = 255;
+	}
+}
+void dioda()
+{	//zapalanie
+	DDRA = 255;
+	while(1){
+	PORTA = 0;
+	for(int i=0;i<200;i++)
+	{
+		PORTA = 255;
+		for(int j=0;j<i;j++)
+		{
+			_delay_ms(0.1);
+		}
+		
+		PORTA = 0;
+		for(int j=0;j<200-i;j++)
+		{
+			_delay_ms(0.1);
+		}
+	}
+	PORTA = 255;
+	//gasniecie
+	for(int i=0;i<200;i++)
+	{
+		PORTA = 255;
+		for(int j=0;j<200-i;j++)
+		{
+			_delay_ms(0.1);
+		}
+		
+		PORTA = 0;
+		for(int j=0;j<i;j++)
+		{
+			_delay_ms(0.1);
+		}
+	}
+	PORTA = 0;}
+}
+int main(void)
+{
+	//zadanie1();
+	//zadanie2();
+	//zadanie3();
+	dioda();	
+}
+
